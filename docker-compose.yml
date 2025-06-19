@@ -1,0 +1,21 @@
+version: '3.9'
+
+services:
+  backend:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      - 'postgresql://crud_app_mqen_user:gfdrlMfaaXKs4ioZ7Srm2YVjedue1zHx@dpg-d0lii80gjchc73f46bc0-a.oregon-postgres.render.com/crud_app_mqen`
+    depends_on:
+      - db
+
+  db:
+    image: postgres:15
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: mydb
+    volumes:
+      - pgdata:/var/lib/postgresql/data
