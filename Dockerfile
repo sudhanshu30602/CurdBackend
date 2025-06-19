@@ -9,7 +9,7 @@ COPY package*.json ./
 RUN npm install
 
 # COPY . .
-# jfnvjfn
+# jfnvjfnz,m vkf vkf vmc  mc 
 # Expose your app's port
 EXPOSE 3000
 
