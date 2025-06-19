@@ -8,8 +8,8 @@ WORKDIR /app
 COPY package*.json ./
 RUN npm install
 
-COPY . .
-
+# COPY . .
+# jfnvjfn
 # Expose your app's port
 EXPOSE 3000
 
