@@ -10,6 +10,8 @@ RUN npm install
 
 # COPY . .
 # jfnvjfnz,m vkf vkf vmc  mc 
+# jfnvjfn
+#Sudhanshu Guptakal appna
 # Expose your app's port
 EXPOSE 3000
 
